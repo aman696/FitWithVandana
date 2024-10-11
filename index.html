@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit with Vandana - Empowering Postpartum Fitness</title>
+    <style>
+        :root {
+            --primary-color: #ff69b4;
+            --secondary-color: #4a4a4a;
+            --background-color: #f9f9f9;
+            --text-color: #333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--secondary-color);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .hero {
+            background: linear-gradient(rgba(255,105,180,0.8), rgba(255,105,180,0.8)), url('images/hero-background.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #fff;
+            color: var(--primary-color);
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: var(--primary-color);
+            color: #fff;
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: var(--primary-color);
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card h3 {
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .trainer-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .trainer-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .trainer-image:hover {
+            transform: scale(1.05);
+        }
+
+        .video-background {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+
+        .video-background video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .video-content h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .video-content p {
+            font-size: 18px;
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Fit with Vandana</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Empower Your Postpartum Journey</h1>
+                <p>Reclaim your strength, confidence, and well-being with personalized fitness programs</p>
+                <a href="#contact" class="cta-button">Start Your Transformation</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Vandana</h2>
+            <p>Vandana Yadav is a dedicated postpartum fitness specialist with a passion for helping new mothers regain their strength and confidence. With expertise in core recovery, strength training, and Diastasis Recti awareness, Vandana offers personalized fitness solutions tailored to each woman's unique needs.</p>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services">
+                <div class="service-card">
+                    <h3>Postpartum Fitness</h3>
+                    <p>Customized workout plans designed specifically for new mothers, focusing on safe and effective exercises to rebuild strength and stamina.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Core Recovery</h3>
+                    <p>Specialized programs targeting abdominal muscles and pelvic floor, essential for postpartum recovery and overall well-being.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Diastasis Recti Support</h3>
+                    <p>Expert guidance and exercises to address Diastasis Recti, a common postpartum condition affecting the abdominal muscles.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Online Coaching</h3>
+                    <p>Flexible, personalized training sessions conducted online, allowing you to work out from the comfort of your home.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2 class="section-title">Training in Action</h2>
+            <div class="trainer-gallery">
+                <img src="images/training1.jpeg" alt="Vandana training a client" class="trainer-image">
+                <img src="images/training2.jpeg" alt="Postpartum workout session" class="trainer-image">
+                <img src="images/training3.jpeg" alt="Core recovery exercises" class="trainer-image">
+            </div>
+        </div>
+    </section>
+
+    <section id="videos" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience Our Workouts</h2>
+            <div class="video-background">
+                <video autoplay loop muted playsinline>
+                    <source src="videos/workout-1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-content">
+                    <h3>Energizing Postpartum Workouts</h3>
+                    <p>Discover the power of targeted exercises designed for new mothers.</p>
+                </div>
+            </div>
+            <div class="video-background">
+                <video autoplay loop muted playsinline>
+                    <source src="videos/workout-2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-content">
+                    <h3>Core Strengthening Techniques</h3>
+                    <p>Learn effective methods to rebuild your core strength after pregnancy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Start Your Fitness Journey</h2>
+            <p style="text-align: center; margin-bottom: 30px;">Ready to transform your postpartum health and fitness? Get in touch with Vandana today for a personalized consultation.</p>
+            <p style="text-align: center; margin-bottom: 15px;">Contact us at: <a href="tel:+917045198057" style="color: var(--primary-color); text-decoration: none;">+91 70451 98057</a></p>
+            <div style="text-align: center;">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Fit with Vandana. Empowering mothers through fitness and wellness. | Contact: <a href="tel:+917045198057" style="color: #fff; text-decoration: none;">+91 70451 98057</a></p>
+        </div>
+    </footer>
+</body>
+</html>
