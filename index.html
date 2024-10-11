@@ -205,6 +205,64 @@
             font-size: 18px;
         }
 
+        .blog-posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .blog-post {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .blog-post:hover {
+            transform: translateY(-10px);
+        }
+
+        .blog-post img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .blog-post-content {
+            padding: 20px;
+        }
+
+        .blog-post h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .blog-post p {
+            margin-bottom: 15px;
+        }
+
+        .blog-post-content .preview {
+    margin-bottom: 15px;
+}
+
+.blog-post-content .full-content {
+    margin-bottom: 15px;
+}
+
+.read-more {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: var(--accent-color);
+}
         footer {
             background-color: var(--secondary-color);
             color: #fff;
@@ -223,6 +281,7 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#videos">Videos</a></li>
+                <li><a href="#blog">Blog</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -306,6 +365,56 @@
         </div>
     </section>
 
+    <section id="blog" class="section">
+        <div class="container">
+            <h2 class="section-title">Latest from Our Blog</h2>
+            <div class="blog-posts">
+                <div class="blog-post">
+                    <div class="blog-post-content">
+                        <h3>Understanding Diastasis Recti: What Every New Mom Should Know</h3>
+                        <p class="preview">Diastasis Recti is a condition that affects many women during and after pregnancy, causing a separation in the abdominal muscles. This issue often leads to a persistent "pregnancy belly" even after giving birth. Understanding Diastasis Recti is the first step towards recovery.</p>
+                        <p class="full-content" style="display: none;">What is Diastasis Recti? Diastasis Recti occurs when the abdominal muscles separate, leading to a weakened core. This is especially common in women after pregnancy, as the muscles stretch to accommodate the growing baby.
+    
+                        Why It Matters If left untreated, Diastasis Recti can lead to other complications, including back pain, poor posture, and in severe cases, hernias. It's important to address this issue with targeted exercises that focus on core recovery and overall strength.
+    
+                        How to Recover There are safe and effective exercises designed to close the abdominal gap, such as restorative core movements and yoga. Working with a fitness expert who specializes in postpartum fitness, like Vandana Yadav, can guide you through this recovery journey.
+    
+                        Conclusion Every new mom deserves to feel strong and confident. By focusing on core recovery and understanding Diastasis Recti, you can rebuild your body and regain your strength.</p>
+                        <button class="read-more">Read More</button>
+                    </div>
+                </div>
+                <div class="blog-post">
+                    <div class="blog-post-content">
+                        <h3>The Importance of Postpartum Fitness: How to Rebuild Your Body After Baby</h3>
+                        <p class="preview">The postpartum period can be challenging for many new moms as they adjust to life with a newborn. Alongside the emotional changes, your body is also going through a period of healing and recovery. Postpartum fitness plays a vital role in regaining strength and confidence after childbirth.</p>
+                        <p class="full-content" style="display: none;">Why Postpartum Fitness Matters After giving birth, your body needs time to heal. Incorporating gentle exercises like yoga, pilates, or strength training can help rebuild your body safely. Postnatal fitness isn't about "bouncing back" quickly, but about restoring balance and strength.
+    
+                        Focus on Core and Pelvic Floor The pelvic floor and core muscles take a major hit during pregnancy. Exercises focusing on these areas can speed up recovery and prevent future issues like incontinence or back pain.
+    
+                        Fuel Your Body Right Nutrition is just as important as exercise. A balanced, nutrient-dense diet can support postpartum recovery, provide energy, and aid in healthy weight loss.
+    
+                        Conclusion Remember, every fitness journey is unique. Postpartum fitness is about celebrating progress and nurturing your body. Whether you're just starting or looking to enhance your routine, focus on building strength and confidence from the inside.</p>
+                        <button class="read-more">Read More</button>
+                    </div>
+                </div>
+                <div class="blog-post">
+                    <div class="blog-post-content">
+                        <h3>Creating a Fitness Routine That Works for Busy Moms</h3>
+                        <p class="preview">For busy moms, finding time to exercise can feel impossible. Between taking care of your baby, household responsibilities, and possibly returning to work, your schedule might seem overwhelming. However, fitting fitness into your life is possible with the right approach.</p>
+                        <p class="full-content" style="display: none;">Time-Saving Workouts Short, effective workouts are a game-changer for busy moms. High-intensity interval training (HIIT) and functional training are both excellent options for burning calories and building strength in a short amount of time. You don't need hours at the gym to stay fit—30 minutes a day is enough.
+    
+                        Online Coaching for Convenience Many fitness programs, like the ones offered by Vandana Yadav, provide online coaching. This allows you to work out from home at your convenience while receiving guidance from an expert.
+    
+                        Functional Training for Daily Life Focus on workouts that prepare your body for the demands of motherhood. Functional training improves strength, balance, and flexibility, helping you handle tasks like lifting your baby or carrying groceries with ease.
+    
+                        Conclusion Fitness doesn't have to take a backseat to your busy life. By incorporating time-saving workouts and online coaching, you can prioritize your health and well-being. Embrace fitness as a tool to boost your energy and confidence as a mom.</p>
+                        <button class="read-more">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="section">
         <div class="container">
             <h2 class="section-title">Start Your Fitness Journey</h2>
@@ -322,5 +431,24 @@
             <p>&copy; 2023 Fit with Vandana. Empowering mothers through fitness and wellness. | Contact: <a href="tel:+917045198057" style="color: #fff; text-decoration: none;">+91 70451 98057</a></p>
         </div>
     </footer>
+    <script>
+        document.querySelectorAll('.read-more').forEach(button => {
+            button.addEventListener('click', function() {
+                const content = this.previousElementSibling;
+                const preview = content.previousElementSibling;
+                
+                if (content.style.display === 'none') {
+                    content.style.display = 'block';
+                    preview.style.display = 'none';
+                    this.textContent = 'Read Less';
+                } else {
+                    content.style.display = 'none';
+                    preview.style.display = 'block';
+                    this.textContent = 'Read More';
+                }
+            });
+        });
+    </script>
+    
 </body>
 </html>
